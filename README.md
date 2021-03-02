@@ -1,5 +1,7 @@
 # teste-raks
 
+Frontend em javascript puro.
+
 ## Instalação
 
 ```npm i```
