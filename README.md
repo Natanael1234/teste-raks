@@ -10,5 +10,5 @@
 
 ## Execução
 
-Acessar a pasta dist e abrir o arquivo index.html.
+Acessar a pasta ```dist``` e abrir o arquivo index.html.
 
