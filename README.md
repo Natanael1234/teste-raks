@@ -1,5 +1,7 @@
 # Teste Raks
 
+Aplicação de cadastro de usuários.
+
 Frontend em javascript puro.
 
 ## Instalação
