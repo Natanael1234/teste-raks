@@ -1,0 +1,52 @@
+.button {
+  background-color: $button-bg;
+  color: $button-fg;
+  &:focus {
+    opacity: $button-opacity-focus;
+  }
+  &:hover {
+    opacity: $button-opacity-hover;
+  }
+  &:disabled {
+    background-color: $button-fg-disabled;
+    color: $button-bg-disabled;
+  }
+  outline-width: 0;
+  border: none;
+  border-radius: 57px;
+  padding: 17px;
+  width: 100%;
+  font-size: 28px;
+
+  &.light {
+    background-color: $button-fg;
+    color: $button-bg;
+  }
+}
+
+.icon-button {
+  width: 32px;
+  height: 32px;
+  background-color: $button-bg;
+  color: $button-fg;
+  &:focus {
+    opacity: $button-opacity-focus;
+  }
+  &:hover {
+    opacity: $button-opacity-hover;
+  }
+  &:disabled {
+    color: $button-bg-disabled;
+    background-color: $button-fg-disabled;
+  }
+  outline-width: 0;
+  border: none;
+  border-radius: 57px;
+  // padding: 17px;
+  font-size: 28px;
+
+  .icone {        
+    font-size: .50em;
+    vertical-align: 30%;
+  }   
+}

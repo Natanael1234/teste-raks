@@ -1,0 +1,21 @@
+.loading {
+  // exibe o texto e oculta o loading
+  &:not(.loading-active) {
+      .text {
+        display: visible;
+      }
+      .loading-icon {
+        display: none;        
+      }
+  }
+
+  // se carregando exibe o loagin e oculta o texto
+  &.loading-active {
+    .text {       
+      display: none;
+    }
+    .loading-icon {        
+      display: visible;
+    }
+  }
+}

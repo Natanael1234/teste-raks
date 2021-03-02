@@ -1,0 +1,67 @@
+@import "./variables.scss";
+
+.list {
+  font-size: 22px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  // linhas entre os itens
+  & > .item:not(:last-child) {
+    border-bottom: 2px solid $gray-line;
+  }
+
+  // itens
+  .item {
+    padding: 22px;
+    // &:hover {
+    //   background-color: rgb(236, 236, 236);
+    // }
+    // &:active {
+    //   background-color: rgb(221, 221, 221);
+    // }
+
+    display: grid;
+    grid-template-columns: auto 32px 32px;
+    gap: 4px;
+
+    .nome{
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+    .cpf{      
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+    }
+    .email{      
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+    }
+    .fone {
+      grid-row: 4 / 5;
+      grid-column: 1 / 2;
+    }
+
+    .cpf,
+    .email,
+    .fone {
+      font-size: 18px;
+      color: #949494;
+    }
+
+    .email,
+    .fone {
+      font-size: 10px!important;
+    }
+    
+    .edit {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    .delete {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;      
+    }
+
+  }
+}
